@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - FabricStyle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">Talk2Me</a>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-menu desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="products.html" class="nav-link active">Products</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Mobile Navigation Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation Menu -->
+            <div class="mobile-nav" id="mobileNav">
+                <div class="mobile-nav-content">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                    <a href="products.html" class="mobile-nav-link active">Products</a>
+                    <a href="contact.html" class="mobile-nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Products Page -->
+    <div class="products-page">
+        <div class="container">
+            <!-- Header -->
+            <div class="page-header">
+                <h1 class="page-title">Our Products</h1>
+                <p class="page-subtitle">
+                    Explore our extensive collection of premium fabrics and fashion accessories. 
+                    Each piece is carefully selected to ensure the highest quality for your style.
+                </p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/Ank2.jpg" alt="Premium Ankara Prints">
+                        <div class="product-category">Ankara</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Premium Ankara Prints</h3>
+                        <p class="product-description">Vibrant African-inspired patterns perfect for dresses, shirts, and accessories</p>
+                        <button class="product-btn" onclick="orderProduct('Premium Ankara Prints')">
+                            <svg class="btn-icon" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3.04 1.05 4.36L1 22l5.64-2.05C8.96 20.64 10.46 21 12 21c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.64 14.36c-.24.68-1.4 1.24-1.96 1.32-.52.08-1.2.08-1.94-.12-.46-.12-1.06-.28-1.82-.54-3.2-1.1-5.3-4.26-5.46-4.46-.16-.2-1.3-1.72-1.3-3.28s.82-2.34 1.12-2.66c.3-.32.66-.4.88-.4s.44.02.64.12c.2.1.48-.02.76.58.28.6.96 2.34 1.04 2.52.08.18.14.4.02.64-.12.24-.18.4-.36.62-.18.22-.38.48-.54.64-.18.18-.36.38-.16.74.2.36.9 1.48 1.92 2.4 1.32 1.18 2.44 1.54 2.78 1.72.34.18.54.16.74-.1.2-.26.86-1 1.08-1.34.22-.34.44-.28.74-.16.3.12 1.9.9 2.22 1.06.32.16.54.24.62.38.08.14.08.8-.16 1.48z"/>
+                            </svg>
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/LC3.webp" alt="Elegant Lace Fabrics">
+                        <div class="product-category">Lace</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Elegant Lace Fabrics</h3>
+                        <p class="product-description">Delicate lace designs ideal for special occasions and formal wear</p>
+                        <button class="product-btn" onclick="orderProduct('Elegant Lace Fabrics')">
+                            <svg class="btn-icon" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3.04 1.05 4.36L1 22l5.64-2.05C8.96 20.64 10.46 21 12 21c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.64 14.36c-.24.68-1.4 1.24-1.96 1.32-.52.08-1.2.08-1.94-.12-.46-.12-1.06-.28-1.82-.54-3.2-1.1-5.3-4.26-5.46-4.46-.16-.2-1.3-1.72-1.3-3.28s.82-2.34 1.12-2.66c.3-.32.66-.4.88-.4s.44.02.64.12c.2.1.48-.02.76.58.28.6.96 2.34 1.04 2.52.08.18.14.4.02.64-.12.24-.18.4-.36.62-.18.22-.38.48-.54.64-.18.18-.36.38-.16.74.2.36.9 1.48 1.92 2.4 1.32 1.18 2.44 1.54 2.78 1.72.34.18.54.16.74-.1.2-.26.86-1 1.08-1.34.22-.34.44-.28.74-.16.3.12 1.9.9 2.22 1.06.32.16.54.24.62.38.08.14.08.8-.16 1.48z"/>
+                            </svg>
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/cottn fab.jpg" alt="Premium Cotton Collection">
+                        <div class="product-category">Cotton</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Premium Cotton Collection</h3>
+                        <p class="product-description">Soft, breathable cotton fabrics in various colors and patterns</p>
+                        <button class="product-btn" onclick="orderProduct('Premium Cotton Collection')">
+                            <svg class="btn-icon" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3.04 1.05 4.36L1 22l5.64-2.05C8.96 20.64 10.46 21 12 21c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.64 14.36c-.24.68-1.4 1.24-1.96 1.32-.52.08-1.2.08-1.94-.12-.46-.12-1.06-.28-1.82-.54-3.2-1.1-5.3-4.26-5.46-4.46-.16-.2-1.3-1.72-1.3-3.28s.82-2.34 1.12-2.66c.3-.32.66-.4.88-.4s.44.02.64.12c.2.1.48-.02.76.58.28.6.96 2.34 1.04 2.52.08.18.14.4.02.64-.12.24-.18.4-.36.62-.18.22-.38.48-.54.64-.18.18-.36.38-.16.74.2.36.9 1.48 1.92 2.4 1.32 1.18 2.44 1.54 2.78 1.72.34.18.54.16.74-.1.2-.26.86-1 1.08-1.34.22-.34.44-.28.74-.16.3.12 1.9.9 2.22 1.06.32.16.54.24.62.38.08.14.08.8-.16 1.48z"/>
+                            </svg>
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/kamp.jpg" alt="Silk Blend Fabrics">
+                        <div class="product-category">Kampala</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Kampala Fabrics</h3>
+                        <p class="product-description">Stunning Kampala blends</p>
+                        <button class="product-btn" onclick="orderProduct('Silk Blend Fabrics')">
+                            <svg class="btn-icon" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3.04 1.05 4.36L1 22l5.64-2.05C8.96 20.64 10.46 21 12 21c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.64 14.36c-.24.68-1.4 1.24-1.96 1.32-.52.08-1.2.08-1.94-.12-.46-.12-1.06-.28-1.82-.54-3.2-1.1-5.3-4.26-5.46-4.46-.16-.2-1.3-1.72-1.3-3.28s.82-2.34 1.12-2.66c.3-.32.66-.4.88-.4s.44.02.64.12c.2.1.48-.02.76.58.28.6.96 2.34 1.04 2.52.08.18.14.4.02.64-.12.24-.18.4-.36.62-.18.22-.38.48-.54.64-.18.18-.36.38-.16.74.2.36.9 1.48 1.92 2.4 1.32 1.18 2.44 1.54 2.78 1.72.34.18.54.16.74-.1.2-.26.86-1 1.08-1.34.22-.34.44-.28.74-.16.3.12 1.9.9 2.22 1.06.32.16.54.24.62.38.08.14.08.8-.16 1.48z"/>
+                            </svg>
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/accesr.jpg" alt="Fashion Accessories">
+                        <div class="product-category">Accessories</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Fashion Accessories</h3>
+                        <p class="product-description">Bags, and embellishments to compliment your style</p>
+                        <button class="product-btn" onclick="orderProduct('Fashion Accessories')">
+                            <svg class="btn-icon" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3.04 1.05 4.36L1 22l5.64-2.05C8.96 20.64 10.46 21 12 21c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.64 14.36c-.24.68-1.4 1.24-1.96 1.32-.52.08-1.2.08-1.94-.12-.46-.12-1.06-.28-1.82-.54-3.2-1.1-5.3-4.26-5.46-4.46-.16-.2-1.3-1.72-1.3-3.28s.82-2.34 1.12-2.66c.3-.32.66-.4.88-.4s.44.02.64.12c.2.1.48-.02.76.58.28.6.96 2.34 1.04 2.52.08.18.14.4.02.64-.12.24-.18.4-.36.62-.18.22-.38.48-.54.64-.18.18-.36.38-.16.74.2.36.9 1.48 1.92 2.4 1.32 1.18 2.44 1.54 2.78 1.72.34.18.54.16.74-.1.2-.26.86-1 1.08-1.34.22-.34.44-.28.74-.16.3.12 1.9.9 2.22 1.06.32.16.54.24.62.38.08.14.08.8-.16 1.48z"/>
+                            </svg>
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/vint.jfif" alt="Vintage Patterns">
+                        <div class="product-category">Vintage</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name">Vintage Patterns</h3>
+                        <p class="product-description">Classic vintage-inspired fabrics with timeless appeal</p>
+                        <button class="product-btn" onclick="orderProduct('Vintage Patterns')">
+                            <svg class="btn-icon" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3.04 1.05 4.36L1 22l5.64-2.05C8.96 20.64 10.46 21 12 21c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.64 14.36c-.24.68-1.4 1.24-1.96 1.32-.52.08-1.2.08-1.94-.12-.46-.12-1.06-.28-1.82-.54-3.2-1.1-5.3-4.26-5.46-4.46-.16-.2-1.3-1.72-1.3-3.28s.82-2.34 1.12-2.66c.3-.32.66-.4.88-.4s.44.02.64.12c.2.1.48-.02.76.58.28.6.96 2.34 1.04 2.52.08.18.14.4.02.64-.12.24-.18.4-.36.62-.18.22-.38.48-.54.64-.18.18-.36.38-.16.74.2.36.9 1.48 1.92 2.4 1.32 1.18 2.44 1.54 2.78 1.72.34.18.54.16.74-.1.2-.26.86-1 1.08-1.34.22-.34.44-.28.74-.16.3.12 1.9.9 2.22 1.06.32.16.54.24.62.38.08.14.08.8-.16 1.48z"/>
+                            </svg>
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/tailorng2.webp" alt="Bridal Collection">
+                        <div class="product-category">Tailoring</div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-name"> Custom Tailoring: Your Vision, Our Fabric.</h3>
+                        <p class="product-description">                        
+                        We don’t just sell fabric — we sew too. Get the perfect material and a flawless custom fit, all in one place. <br> We’ll help you choose the perfect fabric and bring your outfit to life with our expert in-house tailoring. From start to finish.</p>
+                        <button class="product-btn" onclick="orderProduct('Bridal Collection')">
+                            <svg class="btn-icon" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3.04 1.05 4.36L1 22l5.64-2.05C8.96 20.64 10.46 21 12 21c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.64 14.36c-.24.68-1.4 1.24-1.96 1.32-.52.08-1.2.08-1.94-.12-.46-.12-1.06-.28-1.82-.54-3.2-1.1-5.3-4.26-5.46-4.46-.16-.2-1.3-1.72-1.3-3.28s.82-2.34 1.12-2.66c.3-.32.66-.4.88-.4s.44.02.64.12c.2.1.48-.02.76.58.28.6.96 2.34 1.04 2.52.08.18.14.4.02.64-.12.24-.18.4-.36.62-.18.22-.38.48-.54.64-.18.18-.36.38-.16.74.2.36.9 1.48 1.92 2.4 1.32 1.18 2.44 1.54 2.78 1.72.34.18.54.16.74-.1.2-.26.86-1 1.08-1.34.22-.34.44-.28.74-.16.3.12 1.9.9 2.22 1.06.32.16.54.24.62.38.08.14.08.8-.16 1.48z"/>
+                            </svg>
+                            Order Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="products-cta">
+                <h2 class="cta-title">Can't Find What You're Looking For?</h2>
+                <p class="cta-subtitle">
+                    We have an extensive <a href="#">catalog of fabrics</a> on our <a href="#">instagram page</a> and can help you source special materials for your unique designs. 
+                    Contact us for custom orders and bulk purchases.
+                </p>
+                <button class="cta-btn" onclick="customRequest()">
+                    <svg class="btn-icon" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12c0 1.54.36 3.04 1.05 4.36L1 22l5.64-2.05C8.96 20.64 10.46 21 12 21c5.52 0 10-4.48 10-10S17.52 2 12 2zm4.64 14.36c-.24.68-1.4 1.24-1.96 1.32-.52.08-1.2.08-1.94-.12-.46-.12-1.06-.28-1.82-.54-3.2-1.1-5.3-4.26-5.46-4.46-.16-.2-1.3-1.72-1.3-3.28s.82-2.34 1.12-2.66c.3-.32.66-.4.88-.4s.44.02.64.12c.2.1.48-.02.76.58.28.6.96 2.34 1.04 2.52.08.18.14.4.02.64-.12.24-.18.4-.36.62-.18.22-.38.48-.54.64-.18.18-.36.38-.16.74.2.36.9 1.48 1.92 2.4 1.32 1.18 2.44 1.54 2.78 1.72.34.18.54.16.74-.1.2-.26.86-1 1.08-1.34.22-.34.44-.28.74-.16.3.12 1.9.9 2.22 1.06.32.16.54.24.62.38.08.14.08.8-.16 1.48z"/>
+                    </svg>
+                    Custom Request
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
